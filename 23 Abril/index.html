@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <fieldset>
+        <legend>Inicio de Sesion</legend>
+        <label for="correo">Correo electronico</label>
+        <input
+          type="email"
+          name="correo"
+          id="correo"
+          placeholder="correo electronico"
+        />
+        <br />
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass" />
+        <button type="submit">Enviar</button>
+      </fieldset>
+      <fieldset>
+        <legend>Registro</legend>
+        <label for="descripcion">Descripcion</label><br />
+        <textarea
+          name="descripcion"
+          id="descripcion"
+          cols="50"
+          rows="10"
+        ></textarea>
+        <input type="number" id="dni" min="1" max="1000" />
+
+        <select name="tecnologia" id="tech">
+          <optgroup label="Frontend">
+            <option value="h">HTML</option>
+            <option value="c">CSS</option>
+          </optgroup>
+          <optgroup label="Backend">
+            <option value="n">Node.js</option>
+            <option value="p">Python</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>checkbox y radios</legend>
+        <p>lenguajes que se van a aprender en la materia</p>
+        <label for="html">Html</label>
+        <input type="checkbox" name="" id="html" value="html">
+        <label for="css">CSS</label>
+        <input type="checkbox" name="" id="css" value="css">
+        <p>equipo del que soy hincha</p>
+        <label for="boca">BOCA</label>
+        <input type="radio" name="equipo" id="boca" value="Boca Jr">
+        <label for="river">RIVER</label>
+        <input type="radio" name="equipo" id="river" value="River Plate">
+      </fieldset>
+    </form>
+  </body>
+</html>
