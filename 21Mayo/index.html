@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .contenedor{
+            display: flex; /* activa flexbox */
+            flex-direction: row; /* default en row */
+            justify-content: space-between;
+            flex-wrap: wrap; /* default nowrap */
+        }
+        .listado{
+            background-color: rgb(83, 83, 163);
+            border-radius: 5px;
+            width: 500px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        
+        li{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="contenedor">
+        <ul class="listado">
+            <li style="align-self: flex-end;">1</li>
+            <li>2</li>
+            <li style="align-self: flex-start;">3</li>
+            <li>4</li>
+            <li style="align-self: flex-end;">5</li>
+        </ul>
+        <ul class="listado">
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+        </ul>
+    </nav>
+</body>
+</html>
